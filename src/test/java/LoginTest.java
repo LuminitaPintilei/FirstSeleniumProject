@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginTest {
 
     public void loginWithValidCredentials(){
-        System.setProperty("webdriver.chrome.driver","resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","resources/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://testfasttrackit.info/selenium-test/");
         WebElement accountLink = driver.findElement(By.cssSelector("#header > div > div.skip-links > div > a > span.label"));
