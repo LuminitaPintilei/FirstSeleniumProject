@@ -1,3 +1,4 @@
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -5,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class CartTest {
-
+@Test
     public void addToCartTest(){
         System.setProperty("webdriver.chrome.driver","resources/chromedriver");
         WebDriver driver = new ChromeDriver();
